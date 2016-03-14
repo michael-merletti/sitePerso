@@ -1,0 +1,51 @@
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title CLICK & RUN
+    // Bootstrap Core CSS
+    link(href='/statique/pages/jeuxmulti/css/bootstrap.min.css', rel='stylesheet')
+    // Custom CSS
+    link(href='/statique/pages/jeuxmulti/css/1-col-portfolio.css', rel='stylesheet')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  style.
+    body {
+    margin: 0;
+    background-image: url(/statique/pages/jeuxmulti/images/grey_wash_wall_@2X.png);
+    }
+    #form {
+    margin-top: 10%;
+    border: 5px solid #337AB7;
+    border-radius: 5px;
+    padding: 5%;
+    }
+    #membre {
+    position: absolute;
+    right: 5%;
+    bottom: 2%;
+    }
+  body
+    .row
+      .col-md-12
+        h1#titre CLICK & RUN
+    .row
+      .col-md-4.col-xs-2
+      #form.col-md-4.col-xs-8
+        form.form-horizontal(action="/jeuxmulti/login" method="post")
+          .form-group
+            input#inputEmail3.form-control(required type='text' name="login", placeholder= login || 'Login')
+          .form-group
+            input#inputPassword3.form-control(required type='password' name="pwd", placeholder='Mot de passe')
+          .form-group
+            button.btn.btn-info(type='submit') Valider
+          #membre.form-group
+            a.btn.btn-primary.btn-lg(href='/jeuxmulti/enregistrement', role='button') Nouveau Membre
+      .col-md-4.col-xs-2
+    .row

@@ -1,0 +1,12 @@
+/********** PETIT HULK **************/
+
+#masque1 {
+    position: fixed;
+    overflow: hidden;
+    bottom: 0px;
+    cursor: url(../images/marteauThor.png), pointer;
+}
+
+#sprite {
+    position: absolute;
+}

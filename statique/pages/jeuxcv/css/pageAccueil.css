@@ -1,0 +1,124 @@
+/*********** POLICE ******/
+
+@font-face {
+    font-family: 'quanticoregular';
+    src: url('../font/Quantico-Regular-webfont.eot');
+    src: url('../font/Quantico-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../font/Quantico-Regular-webfont.woff') format('woff'), url('../font/Quantico-Regular-webfont.ttf') format('truetype'), url('../font/Quantico-Regular-webfont.svg#quanticoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*********** PAGE PRINCIPALE ******/
+
+body {
+    background: url(../images/fondHulk.jpeg);
+    background-size: cover;
+    margin: 0;
+    font-family: 'quanticoregular', sans-serif;
+}
+
+
+/************* DIV COMMENTAIRES ***********/
+
+#commentaires {
+    border: 1px Solid #2C5C5C;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 3;
+    background-color: #73B76A;
+    color: #192E3D;
+    width: 25%;
+    height: auto;
+    padding: 1%;
+    margin-left: 70%;
+    margin-top: 2%;
+    font-family: 'quanticoregular', sans-serif;
+    font-size: 1em;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    text-align: justify;
+    margin: 0;
+}
+
+#entree {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 3px;
+}
+
+.fi-arrow-up {
+    color: #192E3D;
+}
+
+.fi-arrow-down {
+    color: #192E3D;
+}
+
+.fi-arrow-left {
+    color: #192E3D;
+}
+
+.fi-arrow-right {
+    color: #192E3D;
+}
+
+
+/********** GESTION DU PS **************/
+
+#ps {
+    display: none;
+}
+
+#psCache {
+    cursor: url(../images/marteauThor.png), pointer;
+}
+
+
+/********** LIEN CV **************/
+
+a {
+    cursor: url(../images/marteauThor.png), pointer;
+    position: absolute;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+
+/********** BALISES AUDIO **************/
+
+audio {
+    margin-left: 50%;
+}
+
+
+/********** IMAGE POUR GERER LE SON **************/
+
+.fi-volume {
+    color: #73B76A;
+    font-size: 36px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+    cursor: url(../images/marteauThor.png), pointer;
+}
+
+.fi-volume-strike {
+    color: #73B76A;
+    font-size: 36px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+    cursor: url(../images/marteauThor.png), pointer;
+}

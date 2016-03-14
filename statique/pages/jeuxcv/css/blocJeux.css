@@ -1,0 +1,116 @@
+/*********** ECRAN DE JEUX ******/
+
+#bloc {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border: 2px solid #65FFF7;
+    border-radius: 10px;
+    overflow: hidden;
+    left: auto;
+    margin-left: 10%;
+    display: none;
+    background-image: url(../images/fond_hulk.png);
+    background-size: cover;
+}
+
+
+/********* MASQUE PERSO ***********/
+
+#masque {
+    position: absolute;
+    width: 252px;
+    height: 214px;
+    overflow: hidden;
+    z-index: 2;
+    margin-top: 349px;
+    margin-left: 100px;
+}
+
+
+/*********** PERSO *******************/
+
+#perso {
+    position: absolute;
+    overflow: hidden;
+    z-index: 2;
+    margin-left: -691px;
+    margin-top: -777px;
+}
+
+
+/********** SCORE *********/
+
+#score {
+    width: 15%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #65FFF7;
+    position: absolute;
+    z-index: 2;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #4E265A;
+}
+
+
+/********* DIV COMPETENCES **********/
+
+#competences {
+    position: absolute;
+    bottom: 1%;
+    display: none;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    padding: 1%;
+    border: 2px solid #65FFF7;
+    border-radius: 10px;
+    color: #65FFF7;
+    background-color: #4E265A;
+    margin-left: 25%;
+}
+
+
+/********** DIV RESULTAT **************/
+
+#resultat {
+    display: inline-block;
+    background-color: #4E265A;
+    border: 1px solid #65FFF7;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 1%;
+    color: #65FFF7;
+    position: absolute;
+    width: 40%;
+    height: auto;
+    display: none;
+    margin-left: 30%;
+    margin-top: 15%;
+    z-index: 5;
+}
+
+#leResultat {
+    height: 100px;
+    font-size: 50px;
+    color: #EF1C00;
+    text-align: center;
+}
+
+#reload {
+    font-size: 20px;
+    color: #EF1C00;
+    cursor: url(../images/marteauThor.png), pointer;
+    float: left;
+    display: inline-block;
+}
+
+#monCv {
+    font-size: 20px;
+    color: #EF1C00;
+    cursor: url(../images/marteauThor.png), pointer;
+    float: right;
+    display: inline-block;
+}

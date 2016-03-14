@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/statique/pages/jeuxcv/css/pageAccueil.css" />
+    <link rel="stylesheet" type="text/css" href="/statique/pages/jeuxcv/css/petitHulk.css" />
+    <link rel="stylesheet" type="text/css" href="/statique/pages/jeuxcv/css/blocJeux.css" />
+    <link rel="stylesheet" type="text/css" href="/statique/pages/jeuxcv/font/foundation-icons.css" />
+    <title>Michael Merletti Jeu</title>
+    <script type="text/javascript" src="/statique/pages/jeuxcv/librairies/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="/statique/pages/jeuxcv/librairies/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/statique/pages/jeuxcv/js/petitHulk.js"></script>
+    <script type="text/javascript" src="/statique/pages/jeuxcv/js/pageAccueil.js"></script>
+    <script type="text/javascript" src="/statique/pages/jeuxcv/js/hulk.js"></script>
+</head>
+
+<body>
+    <div id="resultat">
+        <p id="leResultat"><span id="winOrLose"></span></p>
+        <p id="win">Bien joué, vous pouvez refaire une partie parce que vous avez trouvé ce jeux vraiment sympa ou allez voir mon cv pour m'envoyer un mail!</p>
+        <p id="lose">Dommage, vous pouvez refaire une partie pour essayer de voir toutes mes compétences ou allez voir voir mon cv pour m'envoyer un mail si je vous ai déjà convaincu!</p>
+        <br>
+        <p id="reload">RECOMMENCER</p>
+        <p id=monCv>VOIR MON CV</p>
+    </div>
+    <div id="commentaires">
+        <h1>Bienvenue !</h1>
+        <p>Je m'appelle Michael, je suis développeur Javascript Fullstack.</p>
+        <p>Vous en avez assez de lire des CV qui se ressemblent?</p>
+        <p>Je vous propose de découvrir mes compétences au travers d'un petit jeu</p>
+        <p>Laissez sortir le Hulk qui est en vous et défoulez vous!</p>
+        <p>Vous pouvez utiliser les flèches <i class="fi-arrow-left"></i><i class="fi-arrow-up"></i><i class="fi-arrow-down"></i><i class="fi-arrow-right"></i> pour vous diriger, et la touche "Entrée" <img src="/statique/pages/jeuxcv/images/entree.png" alt="toucheEntree" id="entree" /> (restez appuyé sur la touche) pour attaquer, plus vous progresserez dans le jeu plus vous découvrirez mes compétences</p>
+        <p>Quand vous êtes prêt, cliquez sur le Hulk qui se balade...</p>
+        <p>Si vous n'êtes pas joueur, vous pouvez voir directement mon CV en cliquant sur le "A" en haut à gauche.</p>
+        <p id="psCache">PS: <span id="ps">vous pouvez déplacer le petit hulk... <br> et couper la musique en bas a droite</span></p>
+
+    </div>
+    <a href="/statique/pages/jeuxcv/cv/cv.html"><img src="/statique/pages/jeuxcv/images/avengers.png" alt="logoAvengers" title="michaelmerlettiCV" /></a>
+    <div id="bloc">
+        <div id="score">SCORE : <span id="spanScore">0</span></div>
+        <div id='masque'><img src="/statique/pages/jeuxcv/images/Hulk.png" class="sprite" alt="hulk" id="perso" /></div>
+    </div>
+    <div id="competences">
+        <img src="/statique/pages/jeuxcv/images/petitLogo/Captain_America_Shield.png" alt="captainAmerica">
+        <img src="/statique/pages/jeuxcv/images/petitLogo/Captain_America_Shield.png" alt="captainAmerica">
+        <img src="/statique/pages/jeuxcv/images/petitLogo/Captain_America_Shield.png" alt="captainAmerica">
+        <img src="/statique/pages/jeuxcv/images/petitLogo/Captain_America_Shield.png" alt="captainAmerica">
+        <img src="/statique/pages/jeuxcv/images/petitLogo/Captain_America_Shield.png" alt="captainAmerica">
+        <img src="/statique/pages/jeuxcv/images/petitLogo/Captain_America_Shield.png" alt="captainAmerica">
+        <img src="/statique/pages/jeuxcv/images/petitLogo/Captain_America_Shield.png" alt="captainAmerica">
+        <img src="/statique/pages/jeuxcv/images/petitLogo/Captain_America_Shield.png" alt="captainAmerica">
+        <img src="/statique/pages/jeuxcv/images/petitLogo/Captain_America_Shield.png" alt="captainAmerica">
+        <img src="/statique/pages/jeuxcv/images/petitLogo/Captain_America_Shield.png" alt="captainAmerica">
+        <img src="/statique/pages/jeuxcv/images/petitLogo/Captain_America_Shield.png" alt="captainAmerica">
+    </div>
+    <div id="masque1">
+        <img src="/statique/pages/jeuxcv/images/sprite_hulkV2.png" id="sprite" alt="petitHulk" />
+    </div>
+    <audio src="/statique/pages/jeuxcv/sons/THE_AVENGERS--Theme_Song.mp3" autoplay loop id="audio">
+    </audio>
+    <audio src="/statique/pages/jeuxcv/sons/sf_canon_01.mp3"></audio>
+    <audio src="/statique/pages/jeuxcv/sons/monstre_12.mp3"></audio>
+    <audio src="/statique/pages/jeuxcv/sons/grognement-1.mp3"></audio>
+    <audio src="/statique/pages/jeuxcv/sons/SF-crowd1.mp3"></audio>
+    <audio src="/statique/pages/jeuxcv/sons/hooouuu.mp3"></audio>
+    <i class="fi-volume" id="son"></i>
+</body>
+
+</html>

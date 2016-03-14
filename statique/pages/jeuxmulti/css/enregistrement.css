@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    background-image: url(/statique/pages/jeuxmulti//images/grey_wash_wall_@2X.png);
+}
+
+#form {
+    margin-top: 2%;
+    border: 5px solid #337AB7;
+    border-radius: 5px;
+    padding: 5%;
+}
+
+#membre {
+    position: absolute;
+    right: 5%;
+    bottom: 2%;
+}

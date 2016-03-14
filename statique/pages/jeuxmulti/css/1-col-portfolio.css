@@ -1,0 +1,23 @@
+img {
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    width: 50px;
+    height: 50px;
+}
+
+html,
+body {
+    font-family: monospace;
+    font-size: 1.5vw, vmin: 1vw, vm: 1vw;
+    height: 100%;
+    margin: 0;
+}
+
+#titre {
+    text-align: center;
+    font-size: 10vw;
+    font-family: monospace;
+    color: #337AB7;
+    text-shadow: 5px 5px 5px white, 15px 15px 15px black;
+}

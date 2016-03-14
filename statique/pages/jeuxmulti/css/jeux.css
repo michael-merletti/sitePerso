@@ -1,0 +1,138 @@
+#divClick {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: auto;
+    height: auto;
+    z-index: 5;
+}
+
+body {
+    background-image: url("/statique/pages/jeuxmulti/images/grey_wash_wall_@2X.png");
+}
+
+#ready {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: red;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+    top: 0px;
+    left: 0px;
+    font-size: 15px;
+}
+
+#win {
+    position: absolute;
+    width: 12%;
+    min-width: 57px;
+    max-width: 114px;
+    height: 100%;
+    left: 80%;
+    background-image: url(/statique/pages/jeuxmulti/images/flag.png);
+    overflow: hidden;
+}
+
+#fin {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    opacity: 0.7;
+    margin-left: 10%;
+    margin-top: 2%;
+    display: none;
+    z-index: 10;
+    text-align: center;
+    font-size: 50px;
+    line-height: 50px;
+    color: white;
+    border-radius: 20px;
+}
+
+#start {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 15;
+    margin-left: 10%;
+    margin-top: 2%;
+    opacity: 0.7;
+    line-height: 80%;
+}
+
+#fin p {
+    margin-top: 10%;
+}
+
+#start p {
+    margin-top: 5%;
+}
+
+#end {
+    color: red;
+}
+
+#winner {
+    color: #337AB7;
+}
+
+#trois {
+    position: absolute;
+    font-size: 430px;
+    color: #337AB7;
+    display: none;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+#deux {
+    position: absolute;
+    font-size: 430px;
+    color: #337AB7;
+    display: none;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+#un {
+    position: absolute;
+    font-size: 430px;
+    color: #337AB7;
+    display: none;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+#go {
+    position: absolute;
+    font-size: 430px;
+    color: #337AB7;
+    display: none;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.glyphicon.glyphicon-forward {
+    color: #337AB7;
+    font-size: 10vw;
+}
+
+#info {
+    margin-top: 10%;
+    text-align: center;
+}

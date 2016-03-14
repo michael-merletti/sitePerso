@@ -1,0 +1,59 @@
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title CLICK & RUN
+    // Bootstrap Core CSS
+    link(href='/statique/pages/jeuxmulti//css/bootstrap.min.css', rel='stylesheet')
+    script(src='/statique/pages/jeuxmulti//js/jquery-2.1.4.min.js')
+    script(src='/statique/pages/jeuxmulti//js/bootstrap.min.js')
+    script(src='/statique/pages/jeuxmulti//js/enregistrement.js')
+    // Custom CSS
+    link(href='/statique/pages/jeuxmulti//css/1-col-portfolio.css', rel='stylesheet')
+    link(href='/statique/pages/jeuxmulti//css/enregistrement.css', rel='stylesheet')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body
+    .row
+      .col-md-12
+        h1#titre CLICK & RUN
+    .row
+      .col-md-4.col-xs-2
+      #form.col-md-4.col-xs-8
+        form.form-horizontal(action='/jeuxmulti/enregistrement' method='post')
+          .form-group
+            img#imageProfil(src='/statique/pages/jeuxmulti/images/zombie.png' class="img-responsive" alt="Responsive image" class="img-circle")
+          .form-group
+            select#liste.form-control(required name="select")
+              option.option(value="zombie.png") Choisissez votre Avatar
+              option.option(value="casper.png") casper
+              option.option(value="hannibal.png") hannibal
+              option.option(value="monstre.png") monstre
+              option.option(value="zombie.png") zombie
+              option.option(value="thor.png") thor
+              option.option(value="bioman.png") bioman
+              option.option(value="captain.png") captain
+              option.option(value="ironman.png") ironman
+              option.option(value="darthvader.png") darthvader
+          .form-group
+            input#inputName.form-control(required type='text' name="nom", placeholder= nom || 'Nom')
+          .form-group
+            input#inputFirstName.form-control(required type='text' name="prenom", placeholder= prenom || 'Prénom')
+          .form-group
+            input#inputLogin.form-control(required type='text' name="login", placeholder= login || 'Login')
+          .form-group
+            input#inputEmail.form-control(required type='email' name="email", placeholder=email || 'Email')
+          .form-group
+            input#inputPassword.form-control(required type='password' name="pwd", placeholder='Mot de passe')
+          .form-group
+            button.btn.btn-info(type='submit') Enregistrer
+          .form-group
+            a.btn.btn-primary.btn-lg(href='/jeuxmulti', role='button') Déja inscrit
+      .col-md-4.col-xs-2
+    .row

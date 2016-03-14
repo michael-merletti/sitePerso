@@ -1,0 +1,58 @@
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title CLICK & RUN
+    // Bootstrap Core CSS
+    link(href='/statique/pages/jeuxmulti//css/bootstrap.min.css', rel='stylesheet')
+    link(rel='stylesheet' href='/statique/pages/jeuxmulti//css/profil.css')
+    // Custom CSS
+    link(href='/statique/pages/jeuxmulti//css/1-col-portfolio.css', rel='stylesheet')
+    script(src='/statique/pages/jeuxmulti//js/jquery-2.1.4.min.js')
+    script(src='/statique/pages/jeuxmulti//js/bootstrap.min.js')
+    script(src='/statique/pages/jeuxmulti//js/profil.js')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  style.
+    body {
+    margin: 0;
+    background-image: url(/statique/pages/jeuxmulti/images/grey_wash_wall_@2X.png);
+    }
+  body
+    .containner
+      .row
+        .col-md-12
+          h1#titre CLICK & RUN
+      .row
+        .col-md-1.col-xs-0
+        .col-md-5.col-xs-6
+          #profil
+            img(id="imageProfil" src="/statique/pages/jeuxmulti/images/" + dataLogin[0].photo)
+            h1= dataLogin[0].login
+            p Nombre de parties jouées :
+              span= dataLogin[0].parties
+            p Nombre de victoires :
+              span= dataLogin[0].victoires
+          .row
+            .col-md-12.col-xs-10
+            p#partie
+          .row
+            .col-md-12.col-xs-10
+            #demarrer
+              a(href="/jeuxmulti/jeux") Démarrer une partie
+        .col-md-5.col-xs-6
+          #topscores
+            h1 TOP SCORES :
+            each val, index in dataUsers
+              p= 'Login: ' + val.login + ' Nombre de partie: ' + val.parties + ' Nomdre de victoires: ' + val.victoires
+      .row
+        .col-md-10.col-xs-1
+        .col-md-2.col-xs-10
+          #deconnection
+            a.btn.btn-danger.btn-lg(href='/jeuxmulti', role='button') DECONNECTION
