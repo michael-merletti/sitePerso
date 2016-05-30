@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function () {
     //'https://www.michaelmerletti.com:443'
-    var socket = io('https://www.michaelmerletti.com:443');
+    var socket = io('https://ws.michaelmerletti.com:443');
     var goGame = false;
     var ready = false;
     var tableauIdPersos = [];

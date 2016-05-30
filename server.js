@@ -69,6 +69,12 @@ app.get('/pages/jeuxcv/cv/cv.html', function (req, res) {
     });
 })
 
+app.get('/pages/cv', function (req, res) {
+    res.sendFile('cv.html', {
+        root: path.join(__dirname, '/statique/pages/jeuxcv/cv')
+    });
+})
+
 app.get('/jeuxmulti', function (req, res) {
     res.render('indexJeuxMulti');
 })
@@ -347,8 +353,8 @@ IOServer.on('connection', function (socket) {
                         collision = true;
                         partieEnCours = false;
                         console.log('collision');
-//                        tableauReady.splice(0, tableauReady.length);
-//                        tableauPersos.splice(0, tableauPersos.length);
+                        tableauReady.splice(0, tableauReady.length);
+                        tableauPersos.splice(0, tableauPersos.length);
                         maBaseDeDonees.collection('users').update({
                             login: data.login
                         }, {

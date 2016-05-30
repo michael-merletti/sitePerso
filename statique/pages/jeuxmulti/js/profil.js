@@ -2,6 +2,7 @@ $(document).ready(function () {
 
     var intervalPartieID = window.setInterval(function () {
         $.get('/jeuxmulti/partieEnCours', function (data) {
+            console.log(data);
             if (data.partie) {
                 $('#partie').text('une partie est cours merci de patienter...');
                 $('#partie').css('background-color', '#D9534F');
